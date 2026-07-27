@@ -1,7 +1,24 @@
 aid: imara
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/imara.png
 name: Imara
-description: Imara is a company surfaced as a portfolio company of battery-ventures and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Imara Corporation was a lithium-ion battery technology startup founded in 2006 in Menlo Park,
+  California, that grew out of research at SRI International. It designed and manufactured high-power
+  lithium-ion battery cells and packs based on patented cathode materials science, targeting power tools,
+  outdoor power equipment, hybrid electric vehicles, specialty applications, and power-grid energy storage.
+  Backed by Battery Ventures and Nth Power, it raised roughly $15.65M and reached commercial cell production
+  in 2009 before shutting down around 2010-2011 for lack of manufacturing funding. It is a hardware company
+  with no public API, developer portal, or documentation surface, and is now defunct.
 url: https://raw.githubusercontent.com/api-evangelist/imara/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +26,29 @@ x-backed-by:
 - battery-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-note: Hardware (lithium-ion battery) company, shut down ~2010-2011; no API surface exists to enrich.
+x-enrichment-outcome: no-api-surface
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Batteries
+- Lithium-Ion
+- Energy Storage
+- Clean Technology
+- Hardware
+- Electric Vehicles
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
